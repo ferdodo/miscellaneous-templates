@@ -1,0 +1,17 @@
+version: "3.7"
+services:
+
+  css:
+    build: css
+    ports:
+      - 31846:8080
+
+  minimal:
+    build: minimal
+    ports:
+      - 31847:8080
+
+  yaml:
+    build: yaml
+    ports:
+      - 31848:8080

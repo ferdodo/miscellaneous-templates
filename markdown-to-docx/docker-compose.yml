@@ -1,0 +1,17 @@
+version: "3.7"
+services:
+
+  app:
+    build: app
+    volumes:
+      - share:/root/dist
+
+  filebrowser:
+    build: filebrowser
+    ports: 
+      - 29685:80
+    volumes:
+      - share:/srv
+
+volumes:
+  share:
