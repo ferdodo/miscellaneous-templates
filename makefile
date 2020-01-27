@@ -1,7 +1,7 @@
 
 default:
-
-up:
-	make -C coffeescript-testing up
-	make -C cordova up
-	make -C markdown-to-docx up
+	make -C coffeescript-testing
+	make -C cordova
+	make -C markdown-to-docx
+	make -C selenium-testing
+	make -C electron
