@@ -18,16 +18,16 @@ RUN npm install -g cordova
 
 # install graddle
 WORKDIR /opt
-RUN wget https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip
+RUN wget -q https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip
 RUN apt-get update && apt-get install unzip
-RUN unzip gradle-${GRADLE_VERSION}-bin.zip
+RUN unzip -q gradle-${GRADLE_VERSION}-bin.zip
 
 
 # install android
 WORKDIR /opt/android-sdk-linux
 ENV ANDROID_HOME /opt/android-sdk-linux
-RUN wget https://dl.google.com/android/repository/tools_${ANDRDOID_TOOLS_VERSION}-linux.zip
-RUN unzip tools_${ANDRDOID_TOOLS_VERSION}-linux.zip
+RUN wget -q https://dl.google.com/android/repository/tools_${ANDRDOID_TOOLS_VERSION}-linux.zip
+RUN unzip -q tools_${ANDRDOID_TOOLS_VERSION}-linux.zip
 ENV PATH ${GRADLE_HOME}/bin:${JAVA_HOME}/bin:${ANDROID_HOME}/tools:$ANDROID_HOME/platform-tools:$PATH
 RUN echo y | android update sdk --no-ui -a --filter platform-tools,${ANDROID_API_LEVELS},build-tools-${ANDROID_BUILD_TOOLS_VERSION}
 
