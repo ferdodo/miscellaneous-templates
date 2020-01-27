@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/ferdodo/coffeescript-testing-template#readme",
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.19.2",
     "lodash": "^4.17.11"
   }
 }
