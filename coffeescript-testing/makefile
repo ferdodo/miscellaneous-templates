@@ -1,8 +1,5 @@
 
 
-default:
-
-
 up: down build
 	docker run -d --name coffeescript-testing coffeescript-testing
 

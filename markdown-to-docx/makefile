@@ -1,5 +1,4 @@
 
-default:
 
 up: down build
 	docker-compose up -d
