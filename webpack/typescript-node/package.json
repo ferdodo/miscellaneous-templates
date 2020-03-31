@@ -1,0 +1,25 @@
+{
+	"name": "new-project",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"build": "webpack",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@types/js-yaml": "^3.12.3",
+		"@types/lodash": "^4.14.149",
+		"@types/node": "^13.9.8",
+		"chalk": "^3.0.0",
+		"js-yaml": "^3.13.1",
+		"lodash": "^4.17.15",
+		"ts-loader": "^6.2.2",
+		"typescript": "^3.8.3",
+		"webpack": "^4.42.1",
+		"webpack-cli": "^3.3.11"
+	}
+}
