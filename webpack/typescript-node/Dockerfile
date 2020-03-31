@@ -17,7 +17,6 @@ COPY src src
 COPY webpack.config.js .
 COPY tsconfig.json .
 RUN npm run build
-RUN ls -lh app
 
 
 # run
