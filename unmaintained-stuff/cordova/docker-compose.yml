@@ -1,0 +1,16 @@
+version: '3'
+services:
+
+  web:
+    build:
+      context: .
+      dockerfile: web/Dockerfile
+    ports:
+      - "28595:8000"
+
+  apk:
+    build:
+      context: .
+      dockerfile: apk/Dockerfile
+    ports:
+      - "28596:8080"
