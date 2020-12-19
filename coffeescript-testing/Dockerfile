@@ -20,4 +20,4 @@ RUN coffee -c index.coffee
 
 
 # startup
-CMD node . && sleep infinity
+CMD node .
