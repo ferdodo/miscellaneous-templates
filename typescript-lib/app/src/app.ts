@@ -1,0 +1,11 @@
+import {default as Calculation, Operation} from "calculation";
+const a = 4;
+const b = 2;
+const addition = new Calculation(a, b, Operation.Addition);
+console.log(`${a} + ${b} is ${addition.result}`);
+const substraction = new Calculation(a, b, Operation.Substraction);
+console.log(`${a} - ${b} is ${substraction.result}`);
+const division = new Calculation(a, b, Operation.Division);
+console.log(`${a} / ${b} is ${division.result}`);
+const multiplication = new Calculation(a, b, Operation.Multiplication);
+console.log(`${a} * ${b} is ${multiplication.result}`);

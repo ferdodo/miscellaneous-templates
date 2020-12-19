@@ -1,0 +1,15 @@
+{
+	"name": "calculation",
+	"main": "./dist/calculation.js",
+	"types": "./dist/calculation.d.ts",
+	"version": "0.1.0",
+	"scripts": {
+		"prebuild": "tsc",
+		"build": "esbuild src/calculation.ts --bundle --format=esm --outfile=dist/calculation.js"
+	},
+	"devDependencies": {
+		"esbuild": "^0.8.22",
+		"typescript": "^4.1.3"
+	},
+	"dependencies": {}
+}

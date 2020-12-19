@@ -1,0 +1,34 @@
+{
+  "name": "app",
+  "requires": true,
+  "lockfileVersion": 1,
+  "dependencies": {
+    "calculation": {
+      "version": "file:../calculation",
+      "dependencies": {
+        "esbuild": {
+          "version": "0.8.22",
+          "resolved": "https://registry.npmjs.org/esbuild/-/esbuild-0.8.22.tgz",
+          "integrity": "sha512-7cgcJwjff5pw6JLTpUyN3QZ6raOYamfvBt7ry0tyGZwZJ/W8mJrHuv+VC5rbNEO4Mz8s8ElmcavKc7R2g1HWow=="
+        },
+        "typescript": {
+          "version": "4.1.3",
+          "resolved": "https://registry.npmjs.org/typescript/-/typescript-4.1.3.tgz",
+          "integrity": "sha512-B3ZIOf1IKeH2ixgHhj6la6xdwR9QrLC5d1VKeCSY4tvkqhF2eqd9O7txNlS0PO3GrBAFIdr3L1ndNwteUbZLYg=="
+        }
+      }
+    },
+    "esbuild": {
+      "version": "0.8.24",
+      "resolved": "https://registry.npmjs.org/esbuild/-/esbuild-0.8.24.tgz",
+      "integrity": "sha512-bqgEa2VemAN+YM52SM1626+/pdLp+p9NyqISB06ixcvauKIJk6akia3UTTsGAgn0oHEdReZ97gL+LYX+UjgwKA==",
+      "dev": true
+    },
+    "typescript": {
+      "version": "4.1.3",
+      "resolved": "https://registry.npmjs.org/typescript/-/typescript-4.1.3.tgz",
+      "integrity": "sha512-B3ZIOf1IKeH2ixgHhj6la6xdwR9QrLC5d1VKeCSY4tvkqhF2eqd9O7txNlS0PO3GrBAFIdr3L1ndNwteUbZLYg==",
+      "dev": true
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "app",
+  "main": "dist/app.js",
+  "scripts": {
+    "prebuild": "tsc",
+    "build": "esbuild src/app.ts --bundle --format=esm --outfile=dist/app.js"
+  },
+  "devDependencies": {
+    "esbuild": "^0.8.22",
+    "typescript": "^4.1.3"
+  },
+  "dependencies": {
+    "calculation": "file:../calculation"
+  }
+}
