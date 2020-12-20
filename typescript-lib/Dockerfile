@@ -13,7 +13,7 @@ WORKDIR /app/src/app-javascript-esm
 RUN npm install
 RUN node .
 
-FROM node:erbium
+FROM node:dubnium
 WORKDIR /app
 COPY src src
 WORKDIR /app/src/app-javascript-commonjs
