@@ -1,0 +1,16 @@
+import {default as Calculation, Operation} from "calculation";
+import assert from "assert";
+const a = 4;
+const b = 2;
+const addition = new Calculation(a, b, Operation.Addition);
+const substraction = new Calculation(a, b, Operation.Substraction);
+const division = new Calculation(a, b, Operation.Division);
+const multiplication = new Calculation(a, b, Operation.Multiplication);
+console.log(`${a} + ${b} is ${addition.result}`);
+console.log(`${a} - ${b} is ${substraction.result}`);
+console.log(`${a} / ${b} is ${division.result}`);
+console.log(`${a} * ${b} is ${multiplication.result}`);
+assert.equal(a + b, addition.result);
+assert.equal(a - b, substraction.result);
+assert.equal(a / b, division.result);
+assert.equal(a * b, multiplication.result);
